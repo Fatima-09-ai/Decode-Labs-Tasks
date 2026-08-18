@@ -52,6 +52,7 @@ while choice!="exit":
           try:
             index=int(input("Enter task number to mark complete:"))
             my_tasks[index-1]["done"] = True
+            print("Congrats! You have completed the task...")
           except (ValueError,IndexError):
             print("That's not a valid task number.")  
       case _:
